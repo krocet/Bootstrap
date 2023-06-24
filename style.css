@@ -9,10 +9,13 @@ body {
 }
 
 
+
 .container-line-1 {
     margin-bottom: 16px;
 }
 
+
+/*карточка фильма*/
 .card-film {
     width: 282px;
     height: 520px;
@@ -47,22 +50,35 @@ body {
     color: #EBEEF5;
 }
 
-.card-rating {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #000000cc;
-    color: #FFAD49;
-    border-radius: 8px;
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    width: 63px;
-    height: 30px;
+.card-link {
+    text-decoration: none;
 }
 
 
 
+
+/*рейтинг фильма*/
+.card-rating {
+    display: flex;
+    background-color: #000000cc;
+    color: #FFAD49;
+    border-radius: 8px;
+    padding: 5px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    flex-direction: row;
+}
+
+.rating {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+
+
+
+/*картинка фильма*/
 .card-img {
     margin-bottom: 16px;
 }
@@ -76,29 +92,31 @@ body {
 
 
 
-.container-bottom {
+
+/*кнопка в конце страницы*/
+.container-button {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.text-bottom {
-    display: flex;
-    justify-content: center;
-    color: #767E94;
+.text-button {
     margin-top: 90px;
+    cursor: pointer;
 }
 
-.bottom {
+.button {
     color: #ffffff;
-    display: flex;
-    justify-content: center;
     background: #7B6EF6;
-    padding: 8px 15px;
     height: 56px;
     width: 189px;
     border-radius: 12px;
-    align-items: center;
+    border: none;
     cursor: pointer;
+}
+
+.button-link {
+    text-decoration: none;
+    color: #767E94;
 }
 
